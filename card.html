@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmirHossein Zarei — Business card</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b0f0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f0e'/%3E%3Cpath d='M18 44 L32 18 L46 44' fill='none' stroke='%2363e6a1' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 36 h16' stroke='%2363e6a1' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #0b0f0e;
+    --muted: #5b6f66;
+    --accent: #0f7a4d;
+    --paper: #ffffff;
+    --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 24px;
+    background: radial-gradient(700px 360px at 50% 0%, rgba(99,230,161,.10), transparent 70%), #0b0f0e;
+    font-family: var(--font);
+    color: #e8f0ec;
+  }
+  .card {
+    width: 400px;
+    max-width: 100%;
+    aspect-ratio: 85 / 55;
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 14px;
+    padding: 22px 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    box-shadow: 0 24px 60px rgba(0,0,0,.45);
+  }
+  .left { display: flex; flex-direction: column; min-width: 0; }
+  .brand { display: flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 9.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+  .brand::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .name { margin: auto 0 0; font-size: 27px; line-height: 1.02; letter-spacing: -.03em; font-weight: 700; }
+  .role { margin: 5px 0 0; font-size: 11.5px; color: var(--muted); }
+  .links { margin-top: auto; padding-top: 12px; border-top: 1px solid #e3ebe7; display: grid; gap: 3px; font-family: var(--mono); font-size: 9.5px; color: var(--ink); }
+  .links a { color: inherit; text-decoration: none; }
+  .links a:hover { color: var(--accent); }
+  .right { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 8px; }
+  .right img { width: 92px; height: 92px; display: block; }
+  .right span { font-family: var(--mono); font-size: 8px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); text-align: center; }
+  .toolbar { display: flex; gap: 10px; }
+  .toolbar button, .toolbar a {
+    font: inherit; font-size: 13px; font-weight: 600;
+    padding: 9px 16px; border-radius: 9px; cursor: pointer;
+    border: 1px solid #24322c; background: #111715; color: #e8f0ec; text-decoration: none;
+  }
+  .toolbar button { border-color: #63e6a1; background: #63e6a1; color: #0b0f0e; }
+  .hint { font-family: var(--mono); font-size: 11px; color: #7f938a; }
+
+  @media print {
+    @page { size: 85mm 55mm; margin: 0; }
+    body { background: #fff; padding: 0; display: block; min-height: 0; }
+    .toolbar, .hint { display: none; }
+    .card {
+      width: 85mm; height: 55mm; aspect-ratio: auto;
+      border-radius: 0; box-shadow: none; padding: 5mm 6mm; gap: 4mm;
+    }
+    .brand { font-size: 6.6pt; }
+    .name { font-size: 15pt; }
+    .role { font-size: 7.5pt; margin-top: 1.2mm; }
+    .links { font-size: 6.6pt; padding-top: 2.5mm; gap: 0.6mm; }
+    .right img { width: 20mm; height: 20mm; }
+    .right span { font-size: 5.6pt; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <p class="brand">Security research &amp; tooling</p>
+      <h1 class="name">AmirHossein<br>Zarei</h1>
+      <p class="role">Security researcher &amp; developer · A-z-exe</p>
+      <div class="links">
+        <a href="https://a-z-exe.github.io/">a-z-exe.github.io</a>
+        <a href="https://github.com/A-z-exe">github.com/A-z-exe</a>
+      </div>
+    </div>
+    <div class="right">
+      <img src="card-qr.png" width="92" height="92" alt="QR code to a-z-exe.github.io">
+      <span>Scan to<br>save contact</span>
+    </div>
+  </div>
+  <div class="toolbar">
+    <button type="button" onclick="window.print()">Print card</button>
+    <a href="amirhossein-zarei.vcf" download>Save contact</a>
+    <a href="./">Back to site</a>
+  </div>
+  <p class="hint">85 × 55 mm · print at 100% scale</p>
+</body>
+</html>

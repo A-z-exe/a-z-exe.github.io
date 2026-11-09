@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Zarei;AmirHossein;;;
+FN:AmirHossein Zarei
+NICKNAME:A-z-exe
+TITLE:Security Researcher
+URL:https://a-z-exe.github.io/
+X-SOCIALPROFILE;TYPE=github:https://github.com/A-z-exe
+ADR;TYPE=WORK:;;;Iran;;;Iran
+NOTE:Author of BBT OS for Kali Linux. Open-source security tooling.
+END:VCARD
