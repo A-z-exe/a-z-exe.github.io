@@ -6,6 +6,10 @@
 <title>AmirHossein Zarei (A-z-exe) — Security Researcher</title>
 <meta name="description" content="AmirHossein Zarei (A-z-exe), security researcher and developer in Iran. Author of BBT OS for Kali Linux and open-source security tooling.">
 <link rel="canonical" href="https://a-z-exe.github.io/">
+<link rel="alternate" hreflang="en" href="https://a-z-exe.github.io/">
+<link rel="alternate" hreflang="fa-IR" href="https://a-z-exe.github.io/fa/">
+<link rel="alternate" hreflang="x-default" href="https://a-z-exe.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="AmirHossein Zarei">
 <meta name="theme-color" content="#0b0f0e" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f7faf8" media="(prefers-color-scheme: light)">
@@ -14,7 +18,7 @@
 <meta property="og:title" content="AmirHossein Zarei — Security Researcher &amp; Developer">
 <meta property="og:description" content="Author of BBT OS. Open-source security tooling for Kali Linux and Android.">
 <meta property="og:url" content="https://a-z-exe.github.io/">
-<meta property="og:image" content="https://a-z-exe.github.io/og.png">
+<meta property="og:image" content="https://a-z-exe.github.io/og.jpg">
 <meta property="og:image:alt" content="AmirHossein Zarei — security researcher and developer">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -26,7 +30,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AmirHossein Zarei — Security Researcher &amp; Developer">
 <meta name="twitter:description" content="Author of BBT OS. Open-source security tooling for Kali Linux and Android.">
-<meta name="twitter:image" content="https://a-z-exe.github.io/og.png">
+<meta name="twitter:image" content="https://a-z-exe.github.io/og.jpg">
+<meta name="twitter:image:alt" content="AmirHossein Zarei — security researcher and developer">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f0e'/%3E%3Cpath d='M18 44 L32 18 L46 44' fill='none' stroke='%2363e6a1' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 36 h16' stroke='%2363e6a1' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
 
@@ -38,9 +43,9 @@
       "@type": "Person",
       "@id": "https://a-z-exe.github.io/#person",
       "name": "AmirHossein Zarei",
-      "alternateName": ["A-z-exe", "امیرحسین زارعی"],
+      "alternateName": ["A-z-exe", "Amirhossein Zarei", "Amir Hossein Zarei", "امیرحسین زارعی", "امیر حسین زارعی"],
       "url": "https://a-z-exe.github.io/",
-      "image": "https://a-z-exe.github.io/og.png",
+      "image": "https://a-z-exe.github.io/portrait.jpg",
       "jobTitle": "Security researcher and software developer",
       "description": "Security researcher and developer based in Iran. Author of BBT OS, an installable Kali Linux overlay for bug bounty work, and maintainer of open-source security tooling written in Python, Kotlin and Shell.",
       "knowsAbout": [
@@ -54,13 +59,15 @@
         "Network security",
         "VPN and Xray"
       ],
+      "knowsLanguage": ["fa", "en"],
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "IR"
       },
       "sameAs": [
         "https://github.com/A-z-exe",
-        "https://a-z-exe.github.io/bbt-os/"
+        "https://a-z-exe.github.io/bbt-os/",
+        "https://t.me/A_z_exe"
       ]
     },
     {
@@ -70,6 +77,14 @@
       "name": "AmirHossein Zarei",
       "inLanguage": "en",
       "publisher": { "@id": "https://a-z-exe.github.io/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://a-z-exe.github.io/#page",
+      "url": "https://a-z-exe.github.io/",
+      "name": "AmirHossein Zarei (A-z-exe)",
+      "mainEntity": { "@id": "https://a-z-exe.github.io/#person" },
+      "isPartOf": { "@id": "https://a-z-exe.github.io/#website" }
     }
   ]
 }
@@ -87,7 +102,7 @@
     --accent-ink: #0b0f0e;
     --wash: rgba(99, 230, 161, .08);
     --radius: 14px;
-    --max: 860px;
+    --max: 940px;
     --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   }
@@ -145,13 +160,20 @@
   header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .brand { font-family: var(--mono); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
   .brand b { color: var(--text); font-weight: 600; }
-  nav.links { display: flex; gap: 18px; font-size: 14px; font-family: var(--mono); }
+  nav.links { display: flex; gap: 16px; font-size: 13.5px; font-family: var(--mono); flex-wrap: wrap; }
   nav.links a { color: var(--muted); text-decoration: none; }
   nav.links a:hover { color: var(--accent); }
 
   main { padding-bottom: 72px; }
 
-  .hero { padding: 64px 0 40px; }
+  .hero {
+    display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
+    gap: 44px; align-items: center;
+    padding: 56px 0 48px;
+  }
+  @media (max-width: 780px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; }
+  }
   .eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
     font-family: var(--mono); font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase;
@@ -160,15 +182,38 @@
   }
   .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
   h1 {
-    font-size: clamp(2.4rem, 7vw, 4rem);
+    font-size: clamp(2.3rem, 6vw, 3.7rem);
     line-height: 1.05;
     letter-spacing: -.035em;
     margin: 0 0 18px;
     font-weight: 700;
   }
   h1 span { color: var(--muted); font-weight: 400; }
-  .lede { font-size: clamp(1.05rem, 2.4vw, 1.25rem); color: var(--muted); max-width: 34ch; margin: 0 0 30px; }
+  .hero-fa {
+    margin: -8px 0 18px; font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+    color: var(--muted); letter-spacing: 0; line-height: 1.6;
+    text-align: left;
+    font-family: "Vazirmatn", "IRANSans", Tahoma, "Segoe UI", sans-serif;
+  }
+  .lede { font-size: clamp(1.02rem, 2.2vw, 1.2rem); color: var(--muted); max-width: 40ch; margin: 0 0 28px; }
   .lede strong { color: var(--text); font-weight: 600; }
+  .hero-note { margin: 20px 0 0; font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .02em; }
+
+  .portrait { margin: 0; position: relative; }
+  .portrait img {
+    display: block; width: 100%; height: auto;
+    aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 18%;
+    border-radius: calc(var(--radius) + 2px);
+    border: 1px solid var(--line);
+    background: var(--panel);
+    box-shadow: 0 24px 60px -30px rgba(99, 230, 161, .45);
+  }
+  .portrait figcaption {
+    display: flex; flex-direction: column; gap: 2px;
+    margin-top: 10px; padding-left: 2px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+  }
+  .portrait figcaption b { color: var(--text); font-weight: 600; letter-spacing: .02em; }
 
   .actions { display: flex; flex-wrap: wrap; gap: 12px; }
   .btn {
@@ -185,10 +230,33 @@
 
   section { padding: 42px 0; border-top: 1px solid var(--line); }
   .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
-  h2 { font-size: 1.5rem; letter-spacing: -.015em; margin: 0 0 14px; }
-  .about p { margin: 0 0 14px; color: var(--muted); max-width: 62ch; }
+  h2 { font-size: 1.5rem; letter-spacing: -.015em; margin: 0 0 16px; }
+  .about p { margin: 0 0 15px; color: var(--muted); max-width: 66ch; }
   .about p strong { color: var(--text); font-weight: 600; }
-  .about .fa { direction: rtl; text-align: right; font-size: .98rem; border-right: 2px solid var(--line); padding-right: 14px; }
+  .about .fa { direction: rtl; text-align: right; font-size: .98rem; border-right: 2px solid var(--line); padding-right: 14px; margin-top: 20px; line-height: 1.9; font-family: "Vazirmatn", "IRANSans", Tahoma, "Segoe UI", sans-serif; }
+
+  .facts {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 28px; margin: 26px 0 4px;
+    border-top: 1px solid var(--line);
+  }
+  @media (max-width: 560px) { .facts { grid-template-columns: 1fr; } }
+  .facts div { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .facts dt { font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .facts dd { margin: 0; font-size: .93rem; text-align: right; color: var(--text); }
+
+  .timeline { list-style: none; margin: 26px 0 0; padding: 0; }
+  .timeline li { position: relative; padding: 0 0 22px 28px; border-left: 1px solid var(--line); }
+  .timeline li:last-child { padding-bottom: 0; border-left-color: transparent; }
+  .timeline li::before {
+    content: ""; position: absolute; left: -4.5px; top: 8px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--bg); border: 1.5px solid var(--accent);
+  }
+  .timeline time { display: block; font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 0 0 4px; }
+  .timeline p { margin: 0; color: var(--muted); font-size: .96rem; max-width: 64ch; }
+  .timeline b { color: var(--text); font-weight: 600; }
+  .note { font-family: var(--mono); font-size: 11.5px; color: var(--muted); margin: 18px 0 0; }
 
   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
   @media (max-width: 680px) { .grid { grid-template-columns: 1fr; } }
@@ -204,9 +272,16 @@
   .card h3 { margin: 0; font-size: 1.02rem; letter-spacing: -.01em; display: flex; align-items: center; gap: 8px; }
   .card h3::after { content: "\2197"; color: var(--muted); font-size: .85rem; }
   .card p { margin: 0; font-size: .92rem; color: var(--muted); line-height: 1.55; }
-  .meta { margin-top: auto; padding-top: 10px; display: flex; gap: 10px; font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+  .meta { margin-top: auto; padding-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
   .meta span { border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; }
   .meta span.hot { color: var(--accent); border-color: var(--accent); }
+
+  .principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+  @media (max-width: 760px) { .principles { grid-template-columns: 1fr; } }
+  .principle { padding: 18px 20px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .principle h3 { margin: 0 0 6px; font-size: .98rem; }
+  .principle h3 span { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-right: 8px; }
+  .principle p { margin: 0; font-size: .9rem; color: var(--muted); line-height: 1.55; }
 
   .biz {
     display: flex; align-items: center; gap: 26px; flex-wrap: wrap;
@@ -222,7 +297,7 @@
     display: inline-block; font-size: clamp(1.2rem, 4vw, 1.6rem); font-weight: 600;
     letter-spacing: -.02em; margin: 6px 0 10px;
   }
-  .contact p { color: var(--muted); margin: 0; max-width: 56ch; }
+  .contact p { color: var(--muted); margin: 0 0 10px; max-width: 58ch; }
 
   footer.site { border-top: 1px solid var(--line); padding: 26px 0 40px; }
   footer.site .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--muted); font-family: var(--mono); }
@@ -237,9 +312,11 @@
     <a class="brand" href="/">A-z-exe</a>
     <nav class="links" aria-label="Site">
       <a href="#about">about</a>
+      <a href="#journey">journey</a>
       <a href="#projects">projects</a>
       <a href="card.html">card</a>
       <a href="#contact">contact</a>
+      <a href="/fa/" hreflang="fa" lang="fa" title="نسخهٔ فارسی">فارسی</a>
     </nav>
   </div>
 </header>
@@ -247,24 +324,75 @@
 <main id="main">
   <div class="wrap">
     <div class="hero">
-      <p class="eyebrow">Security research &amp; tooling</p>
-      <h1>AmirHossein<br>Zarei <span>/ A-z-exe</span></h1>
-      <p class="lede">I build <strong>offensive-security tooling</strong> for Kali Linux and Android — and ship it as open source.</p>
-      <div class="actions">
-        <a class="btn primary" href="https://github.com/A-z-exe" rel="me">
-          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-          GitHub profile
-        </a>
-        <a class="btn" href="https://github.com/A-z-exe/bbt-os">BBT OS</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Security researcher · Iran</p>
+        <h1>AmirHossein<br>Zarei <span>/ A-z-exe</span></h1>
+        <p class="hero-fa" lang="fa" dir="rtl">امیرحسین زارعی</p>
+        <p class="lede">I build <strong>offensive-security tooling</strong> for Kali Linux and Android — and ship it in the open.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/A-z-exe" rel="me">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            GitHub profile
+          </a>
+          <a class="btn" href="https://github.com/A-z-exe/bbt-os">BBT OS</a>
+        </div>
+        <p class="hero-note">Author of BBT OS · Python, Kotlin, Shell · on GitHub since 2025</p>
       </div>
+      <figure class="portrait">
+        <img src="portrait.jpg" width="760" height="950" alt="Portrait of AmirHossein Zarei, security researcher and developer">
+        <figcaption><b>AmirHossein Zarei</b><span>A-z-exe · Iran</span></figcaption>
+      </figure>
     </div>
 
     <section class="about" id="about" aria-labelledby="about-h">
-      <p class="kicker">About</p>
-      <h2 id="about-h">Security work, built in the open</h2>
-      <p>I am a security researcher and developer based in Iran. My main project is <strong>BBT OS</strong>, an installable overlay for Kali Linux that packages reconnaissance, web, Active&nbsp;Directory, wireless and smart-card tooling behind a single launcher — so a bounty workflow starts from one desktop instead of a dozen terminals.</p>
-      <p>Around it I maintain smaller open-source tools: a Python bug-bounty toolkit, a DNS intelligence utility, an Android permission auditor, and <strong>SchnellVPN</strong>, an Android client built on Xray/VLESS. I care about tooling that is predictable, scope-aware, and honest about what it can and cannot detect.</p>
-      <p class="fa">امیرحسین زارعی — پژوهشگر امنیت و توسعه‌دهنده. پروژهٔ اصلی من BBT OS است: یک لایهٔ نصب‌شدنی روی Kali Linux برای کار باگ‌بانتی، به‌همراه ابزارهای متن‌باز در پایتون و کاتلین.</p>
+      <p class="kicker">Profile</p>
+      <h2 id="about-h">Hello — I'm AmirHossein</h2>
+      <p>I'm a security researcher and software developer from Iran, and I work under the handle <strong>A-z-exe</strong>. My work sits where offensive security meets everyday engineering: I turn manual, repetitive testing steps into tools that other researchers can run, read and check.</p>
+      <p>I started with <strong>Python automation</strong> — small utilities that removed busywork. That habit grew into public tooling: a temporary-mailbox helper, the <a href="https://github.com/A-z-exe/BugBountyToolkit">BugBountyToolkit</a> for recon and checks, and <a href="https://github.com/A-z-exe/dns-intel">dns-intel</a> for DNS discovery and monitoring. Then I moved toward Android: auditing app permission sets, and building <strong>SchnellVPN</strong>, a Kotlin VPN client on Xray that speaks VLESS, VMess, Trojan and Shadowsocks.</p>
+      <p>Those threads came together in <strong>BBT OS</strong>, the project I spend most of my time on: an installable overlay for Kali Linux that puts recon, web, Active&nbsp;Directory, wireless, smart-card and access tooling behind a single launcher, so a bounty workflow starts from one desktop instead of a dozen terminals.</p>
+      <p>What I care about most is honesty in tooling. A tool should tell you what it checked, what it could not check, and how confident it is — and it should never dress up a guess as a finding.</p>
+
+      <dl class="facts">
+        <div><dt>Name</dt><dd>AmirHossein Zarei</dd></div>
+        <div><dt>Handle</dt><dd>A-z-exe</dd></div>
+        <div><dt>Based in</dt><dd>Iran</dd></div>
+        <div><dt>Focus</dt><dd>Offensive security tooling, bug bounty</dd></div>
+        <div><dt>Stack</dt><dd>Python · Kotlin · Shell</dd></div>
+        <div><dt>Main project</dt><dd>BBT OS for Kali Linux</dd></div>
+        <div><dt>On GitHub since</dt><dd>May 2025</dd></div>
+        <div><dt>Languages</dt><dd>Persian · English</dd></div>
+        <div><dt>Also searched as</dt><dd>Amir Hossein Zarei · امیر حسین زارعی</dd></div>
+      </dl>
+
+      <p class="fa">امیرحسین زارعی — پژوهشگر امنیت و توسعه‌دهندهٔ نرم‌افزار از ایران. کارم جایی است که امنیت تهاجمی به مهندسی روزمره می‌رسد: گام‌های تکراری تست را به ابزارهایی تبدیل می‌کنم که دیگران بتوانند اجرا کنند، بخوانند و صحتشان را بررسی کنند. پروژهٔ اصلی‌ام BBT OS است؛ لایهٔ نصب‌شدنی روی Kali Linux که ابزارهای ریکان، وب، اکتیو‌دایرکتوری، بی‌سیم و اسمارت‌کارت را پشت یک لانچر جمع می‌کند.</p>
+    </section>
+
+    <section id="journey" aria-labelledby="journey-h">
+      <p class="kicker">Track record</p>
+      <h2 id="journey-h">How the tooling grew</h2>
+      <ol class="timeline">
+        <li>
+          <time datetime="2025-05">May 2025</time>
+          <p><b>First public repository.</b> bitcoin-key-educational-tool — a study of how keys, addresses and public-key derivation work, written to be read as much as run.</p>
+        </li>
+        <li>
+          <time datetime="2025-08">Aug 2025</time>
+          <p><b>From utilities to testing tools.</b> temp-mail-generator, then BugBountyToolkit: Python reconnaissance and checks with scope-aware rules and report output.</p>
+        </li>
+        <li>
+          <time datetime="2026-02">Feb 2026</time>
+          <p><b>Into Android.</b> AndroidPermissionChecker parses an app's manifest and scores its permission set from the outside, without installing anything.</p>
+        </li>
+        <li>
+          <time datetime="2026-06">Jun 2026</time>
+          <p><b>Intelligence and networking.</b> dns-intel adds DNS records, certificate-transparency discovery and change monitoring. SchnellVPN brings that networking work to Android, in Kotlin.</p>
+        </li>
+        <li>
+          <time datetime="2026-11">Nov 2026</time>
+          <p><b>BBT OS and this site.</b> A full Kali Linux overlay for bounty work — including a smart-card reader that can be reached over a VPCD relay — plus this page and its business card.</p>
+        </li>
+      </ol>
+      <p class="note">Dates are public repository creation dates on GitHub.</p>
     </section>
 
     <section id="projects" aria-labelledby="projects-h">
@@ -283,12 +411,12 @@
         </a>
         <a class="card" href="https://github.com/A-z-exe/SchnellVPN">
           <h3>SchnellVPN</h3>
-          <p>Android VPN client with Xray/VLESS support, written in Kotlin.</p>
+          <p>Android VPN client built on Xray, with VLESS, VMess, Trojan and Shadowsocks support.</p>
           <div class="meta"><span class="hot">Kotlin</span><span>Xray</span><span>Android</span></div>
         </a>
         <a class="card" href="https://github.com/A-z-exe/dns-intel">
           <h3>dns-intel</h3>
-          <p>DNS intelligence utility for record discovery and reporting.</p>
+          <p>DNS reconnaissance: record discovery, certificate-transparency subdomains, history diffs and change alerts.</p>
           <div class="meta"><span class="hot">Python</span><span>DNS</span></div>
         </a>
         <a class="card" href="https://github.com/A-z-exe/AndroidPermissionChecker">
@@ -298,9 +426,33 @@
         </a>
         <a class="card" href="https://github.com/A-z-exe/temp-mail-generator">
           <h3>temp-mail-generator</h3>
-          <p>Disposable mailbox helper for test sign-ups and lab environments.</p>
+          <p>Disposable mailbox helper for test sign-ups and lab environments, with code extraction.</p>
           <div class="meta"><span class="hot">Python</span><span>Lab</span></div>
         </a>
+        <a class="card" href="https://github.com/A-z-exe/bitcoin-key-educational-tool">
+          <h3>bitcoin-key-educational-tool</h3>
+          <p>Offline key generation and address derivation, kept small so the cryptography can be read.</p>
+          <div class="meta"><span class="hot">Python</span><span>Education</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="approach" aria-labelledby="approach-h">
+      <p class="kicker">Approach</p>
+      <h2 id="approach-h">How I work</h2>
+      <div class="principles">
+        <div class="principle">
+          <h3><span>01</span>Scope first</h3>
+          <p>I only test assets that are explicitly in scope. Every tool I write is built to respect that boundary instead of quietly stepping over it.</p>
+        </div>
+        <div class="principle">
+          <h3><span>02</span>Verify, then report</h3>
+          <p>A finding is a reproduction, not a scanner line. Anything I cannot confirm is labelled as unconfirmed or left out.</p>
+        </div>
+        <div class="principle">
+          <h3><span>03</span>Open by default</h3>
+          <p>Source, setup steps and CI ship with the tool, so anyone can read the logic, run it locally and check my claims.</p>
+        </div>
       </div>
     </section>
 
@@ -325,6 +477,7 @@
       <h2 id="contact-h">Open an issue, start a conversation</h2>
       <a class="big" href="https://github.com/A-z-exe" rel="me">github.com/A-z-exe</a>
       <p>Bug reports, feature requests and pull requests are welcome on any repository. For anything security-related, report it privately through GitHub’s advisory form on the affected project.</p>
+      <p>Documentation for BBT OS lives at <a href="https://github.com/A-z-exe/bbt-os#readme">github.com/A-z-exe/bbt-os</a>.</p>
     </section>
   </div>
 </main>

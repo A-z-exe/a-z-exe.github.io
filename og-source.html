@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>OG image source</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #0b0f0e;
+    color: #e8f0ec;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex; align-items: stretch; position: relative;
+  }
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(0deg, transparent 0 39px, rgba(99,230,161,.07) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, rgba(99,230,161,.07) 39px 40px),
+      radial-gradient(700px 400px at 30% 0%, rgba(99,230,161,.12), transparent 70%);
+  }
+  .copy { position: relative; width: 730px; padding: 74px 40px 70px 72px; display: flex; flex-direction: column; }
+  .eyebrow {
+    display: inline-block; align-self: flex-start;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 15px; letter-spacing: .18em; text-transform: uppercase;
+    color: #63e6a1; border: 1px solid #1e2a26; background: rgba(99,230,161,.08);
+    padding: 8px 16px; border-radius: 999px; margin-bottom: 30px;
+  }
+  h1 { font-size: 74px; line-height: 1.02; letter-spacing: -.04em; font-weight: 700; }
+  h1 span { display: block; color: #93a69e; font-weight: 400; font-size: 44px; letter-spacing: -.02em; margin-top: 8px; }
+  p { margin-top: 26px; font-size: 23px; line-height: 1.45; color: #93a69e; max-width: 560px; }
+  p b { color: #e8f0ec; font-weight: 600; }
+  .url {
+    margin-top: auto;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 20px; color: #63e6a1; letter-spacing: .02em;
+  }
+  .url i { display: block; color: #93a69e; font-size: 14px; font-style: normal; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 10px; }
+  .shot { position: relative; width: 470px; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
+  .shot::before {
+    content: ""; position: absolute; inset: 0; z-index: 2;
+    background: linear-gradient(90deg, #0b0f0e 0%, rgba(11,15,14,.55) 26%, rgba(11,15,14,0) 62%);
+  }
+  .shot::after {
+    content: ""; position: absolute; inset: 0; z-index: 3;
+    background: linear-gradient(0deg, rgba(11,15,14,.75), transparent 32%);
+  }
+</style>
+</head>
+<body>
+  <div class="copy">
+    <span class="eyebrow">Security research &amp; tooling</span>
+    <h1>AmirHossein Zarei<span>/ A-z-exe</span></h1>
+    <p><b>Author of BBT OS</b> — an installable Kali Linux overlay for bug bounty work. Open-source security tooling in Python, Kotlin and Shell.</p>
+    <div class="url"><i>Personal site</i>a-z-exe.github.io</div>
+  </div>
+  <div class="shot"><img src="portrait.jpg" alt=""></div>
+</body>
+</html>
